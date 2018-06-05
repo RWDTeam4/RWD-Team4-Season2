@@ -1,5 +1,3 @@
-import json
-
 class Controller:
 	xButton 		= False
 	yButton 		= False
@@ -19,29 +17,23 @@ class Controller:
 	rightStickY 	= 0
 	
 	def __init__(self):
-		self = self
-		#Do Nothing
+		#Initialize all those variables used
+		self.xButton 		= False
+		self.yButton 		= False
+		self.aButton 		= False
+		self.bButton 		= False
+		self.lButton 		= False
+		self.rButton 		= False
+		self.l2Button 		= False
+		self.r2Button 		= False
+		self.l3Button 		= False
+		self.r3Button 		= False
+		self.startButton 	= False
+		self.selectButton 	= False
+		self.leftStickX 	= 0
+		self.leftStickY 	= 0
+		self.rightStickX 	= 0
+		self.rightStickY 	= 0
 	
-	@classmethod
-	def printControllerAsJson():
-		return json.dumps(self)
 
-	@classmethod
-	def readControllerFromJson(jsonData):
-		data = json.load(jsonData)
-		self.xButton = data["xButton"]		
-		self.yButton = data["yButton"]
-		self.aButton = data["aButton"]
-		self.bButton = data["bButton"]
-		self.lButton = data["lButton"]
-		self.rButton = data["rButton"]
-		self.l2Button = data["l2Button"]
-		self.r2Button = data["r2Button"]
-		self.l3Button = data["l3Button"]
-		self.r3Button = data["r3Button"]
-		self.startButton = data["startButton"]
-		self.selectButton = data["selectButton"]
-		self.leftStickX = data["leftStickX"]
-		self.leftStickY = data["leftStickY"]
-		self.rightStickX = data["rightStickX"]
-		self.rightStickY = data["rightStickY"]
+
