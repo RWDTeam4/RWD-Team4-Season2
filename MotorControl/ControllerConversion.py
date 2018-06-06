@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import math, Motor, json
 from Controller import Controller
 

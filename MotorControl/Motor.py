@@ -1,5 +1,7 @@
 import json
 
+#!/usr/bin/env python
+
 class Motor:
 	motorMax = 1
 	motorMin = 0 
@@ -7,8 +9,8 @@ class Motor:
 	reverseDirection = False
 
 	def __init__(self):
-		self.motorMax = 1
-		self.motorMin = 0
+		self.motorMax = 1.0
+		self.motorMin = 0.0
 		self.motorValue = 0.0 #should be a value form -1 to 1
 		self.reverseDirection = False
 
